@@ -42,6 +42,13 @@
    - Tự động tạo câu ví dụ đa ngữ chất lượng cao kèm giải nghĩa ngữ cảnh theo đúng ngôn ngữ đang tra cứu.
    - Cố định kích thước cửa sổ chuẩn lúc khởi động và thiết lập rào chắn kích thước tối thiểu, đảm bảo giao diện luôn co giãn đẹp mắt và không bị vỡ bố cục.
 
+8. **Công Nghệ Chụp OCR Màn Hình Tam Ngữ Tối Ưu (Tri-Lingual Screen OCR)**:
+   - Tích hợp nhận diện văn bản offline siêu tốc cho cả 3 ngôn ngữ: **Tiếng Anh 🇬🇧, Tiếng Trung 🇨🇳, Tiếng Nhật 🇯🇵**.
+   - Tự động chuyển đổi engine Windows OCR chuyên sâu (`en-US`, `zh-Hans-CN`, `ja-JP`) theo ngôn ngữ đang tra cứu.
+   - Thuật toán làm sạch văn bản thông minh (giữ nguyên khoảng trắng tiếng Anh, tự động thu gọn khoảng trắng thừa giữa các ký tự CJK Hán tự / Kana).
+   - Tự động nhận diện ngôn ngữ thông minh sau khi chụp: Tự động chuyển tab từ điển Tiếng Nhật khi quét thấy Hiragana/Katakana, tự chuyển tab Tiếng Anh khi quét từ vựng Latin.
+   - Bổ sung bảng trạng thái gói OCR và nút 1-Click mở Cài đặt Windows để thêm gói Tiếng Nhật cực kỳ tiện lợi.
+
 ---
 
 ## 💻 Yêu Cầu Hệ Thống
