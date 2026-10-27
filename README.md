@@ -34,6 +34,14 @@
 5. **Bộ Cài Đặt Windows Setup Hiện Đại**:
    - Tích hợp trình cài đặt Windows với tùy chọn tạo shortcut tiện lợi trên màn hình Desktop.
 
+6. **Bảng Cài Đặt AI API Tinh Gọn & Tự Động Lưu Tức Thì (Instant Auto-Save)**:
+   - Toàn bộ thiết lập Gemini AI, Agnes AI, Anki Auto-fill và Âm thanh tự động lưu tức thì vào máy ngay khi thay đổi; loại bỏ hoàn toàn các nút bấm "Lưu cấu hình" thủ công.
+   - Chuẩn hóa phân loại đa ngôn ngữ trung tính: Phân tầng độ khó (Sơ cấp / Trung cấp / Cao cấp), độ dài câu và phiên âm (IPA / Pinyin / Furigana) tương thích mượt mà cho cả Tiếng Anh 🇬🇧, Tiếng Trung 🇨🇳 và Tiếng Nhật 🇯🇵.
+
+7. **Trình Tạo Câu Ví Dụ AI Đa Ngữ & Khóa Kích Thước Cửa Sổ Chuẩn**:
+   - Tự động tạo câu ví dụ đa ngữ chất lượng cao kèm giải nghĩa ngữ cảnh theo đúng ngôn ngữ đang tra cứu.
+   - Cố định kích thước cửa sổ chuẩn lúc khởi động và thiết lập rào chắn kích thước tối thiểu, đảm bảo giao diện luôn co giãn đẹp mắt và không bị vỡ bố cục.
+
 ---
 
 ## 💻 Yêu Cầu Hệ Thống
