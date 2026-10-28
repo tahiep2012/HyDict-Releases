@@ -49,6 +49,10 @@
    - Tự động nhận diện ngôn ngữ thông minh sau khi chụp: Tự động chuyển tab từ điển Tiếng Nhật khi quét thấy Hiragana/Katakana, tự chuyển tab Tiếng Anh khi quét từ vựng Latin.
    - Bổ sung bảng trạng thái gói OCR và nút 1-Click mở Cài đặt Windows để thêm gói Tiếng Nhật cực kỳ tiện lợi.
 
+9. **Thuật Toán Xếp Hạng Ưu Tiên & Hợp Nhất Nghĩa Từ Đa Nghĩa (Polysemous Word Ranking & Merging)**:
+   - Tự động ưu tiên xếp hạng các từ vựng thông dụng (chữ thường pinyin e.g. `[ jiā ]` - thêm, cộng, gia tăng) lên trước danh từ riêng viết hoa (e.g. `[ Jiā ]` - Canada, họ Gia).
+   - Tự động gộp và hợp nhất toàn bộ các tầng định nghĩa, từ loại và câu ví dụ từ tất cả các bản ghi của từ đa nghĩa, giải quyết dứt điểm tình trạng mất nghĩa thông dụng của các từ nhiều tầng nghĩa (như 加, 美, 法, 中, 英, 德...).
+
 ---
 
 ## 💻 Yêu Cầu Hệ Thống
