@@ -4,59 +4,59 @@
 
 ---
 
-## 📥 Tải Về Phiên Bản Mới Nhất: v2.6.0
+## 📥 Tải Về Phiên Bản Mới Nhất: v2.6.7
 
 | Gói Tải Về | Tệp Tin | Kích Thước | Mô Tả & Tính Năng |
 | :--- | :--- | :--- | :--- |
-| **Bản Cài Đặt (Khuyên Dùng)** | [**HyDict-v2.6.0-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.0/HyDict-v2.6.0-Setup.exe) | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
-| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.6.0-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.0/HyDict-v2.6.0-windows-x64.zip) | `~56.0 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
+| **Bản Cài Đặt ZIP (Khuyên Dùng)** | [**HyDict-v2.6.7-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.zip)<br>*(hoặc [HyDict-v2.6.7-Setup.exe](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.exe))* | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng đóng gói trong file nén .zip an toàn.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động kích hoạt gói OCR Tiếng Nhật Windows.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
+| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.6.7-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-windows-x64.zip) | `~56.2 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
 
 ---
 
-## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.6.0
+## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.6.7
 
-1. **Hệ Sinh Thái Từ Điển Tam Ngữ Hoàn Chỉnh (Tri-Lingual Engine)**:
-   - **Tiếng Trung 🇨🇳**: 122.500+ từ vựng, âm Hán Việt, Pinyin có thanh điệu, cấp độ HSK 1 - 6, bút thuận chữ Hán (HanziWriter), câu ví dụ song ngữ thực tế.
-   - **Tiếng Anh 🇬🇧**: 104.700+ từ vựng, phiên âm kép Quốc tế (UK & US), nhãn phân loại khung tham chiếu chuẩn CEFR (A1 - C2), từ đồng nghĩa & trái nghĩa chuyên sâu.
-   - **Tiếng Nhật 🇯🇵**: Hán tự Kanji, Hiragana, Katakana, Romaji, âm Hán Việt, cấp độ JLPT N5 - N1 và phân tích cấu trúc chữ.
+1. **Tự Động Cài Đặt AnkiConnect 100% Offline (Zero-Configuration)**:
+   - Gói add-on AnkiConnect (`2055492159`) dung lượng ~91 KB được nhúng trực tiếp vào file thực thi của HyDict.
+   - Khi bấm **"Thêm vào Anki"**, nếu phát hiện máy tính chưa có AnkiConnect, HyDict tự động giải nén và nạp toàn bộ mã nguồn add-on vào thư mục Anki của máy chỉ trong 10ms mà **không cần kết nối Internet**.
+   - Cấu hình sẵn CORS (`http://localhost`, `http://tauri.localhost`, `*`) ngăn chặn triệt để mọi lỗi chặn kết nối giữa Webview và Anki.
+   - Bổ sung nút bấm **`[Tự động cài AnkiConnect (1-Click)]`** nổi bật trong phần Cài đặt Hệ thống để người dùng có thể kích hoạt chủ động bất kỳ lúc nào.
 
-2. **Gợi Ý Từ Khóa Đa Ngữ Thông Minh (Auto-Suggestions)**:
-   - Tự động nhận diện ngôn ngữ tra cứu đang kích hoạt.
-   - Hỗ trợ **tra xuôi** (tiền tố từ vựng) và **tra ngược tiếng Việt đa chiều** (Việt - Anh, Việt - Nhật, Việt - Trung) ngay trong khung gợi ý thả xuống.
+2. **Tự Động Khởi Chạy Anki Desktop Khi Thêm Thẻ**:
+   - Khi bấm nút **"Thêm vào Anki"** mà phần mềm Anki Desktop đang đóng, HyDict tự động quét và kích hoạt `Anki.exe` chạy nền độc lập.
+   - Hệ thống tự động chờ AnkiConnect sẵn sàng và tiếp tục đẩy thẻ mới vào Anki mượt mà, không gây ngắt quãng trải nghiệm người dùng.
 
-3. **Đồng Bộ Anki Card Tự Động Theo Ngôn Ngữ**:
-   - Khi ấn **Thêm vào Anki**, hệ thống tự động nhận diện từ vựng thuộc tiếng Anh, tiếng Nhật hay tiếng Trung để tự động chọn đúng giọng đọc phát âm Neural TTS tương ứng (thay vì mặc định tiếng Trung như trước đây).
+3. **Kiểm Tra Trùng Lặp Thẻ Trước Khi Gọi AI / Sinh Âm Thanh (Pre-check Duplicates)**:
+   - Cơ chế kiểm tra siêu tốc (~30ms) qua AnkiConnect được kích hoạt ngay bước đầu tiên để xác định từ vựng đã tồn tại trong bộ bài hay chưa.
+   - Nếu từ đã có trong Anki: Lập tức dừng quy trình, **tiết kiệm 100% token AI (sinh câu/ảnh)** và **không tốn thời gian tạo audio TTS**, đồng thời chuyển nút sang trạng thái thân thiện: `✓ Đã có trong Anki`.
 
-4. **Studio Lồng Tiếng Video AI & Gemini 1-Click BYOK**:
-   - Giao diện lồng tiếng dạng lưới responsive co giãn mượt mà theo mọi kích thước cửa sổ.
-   - Tích hợp hướng dẫn và nút 1-Click mở trang lấy API Key miễn phí từ Google AI Studio cho Gemini.
+4. **Tự Động Sinh Ảnh Minh Họa AI Đa Ngôn Ngữ (Trung - Anh - Nhật)**:
+   - Hỗ trợ tạo ảnh trực quan theo phong cách đã thiết lập (Anime, Realistic, Cyberpunk, 3D Render...) cho từ vựng của cả 3 ngôn ngữ khi thêm vào Anki.
+   - Tự động nhận diện trạng thái API Key: Tự vô hiệu hóa tính năng tạo ảnh khi chưa nhập Agnes API Key và tự kích hoạt lại ngay khi người dùng nạp Key.
 
-5. **Bộ Cài Đặt Windows Setup Hiện Đại**:
-   - Tích hợp trình cài đặt Windows với tùy chọn tạo shortcut tiện lợi trên màn hình Desktop.
+5. **Khóa Chết Cơ Chế Bảo Vệ Bản Quyền Phần Mềm (Hardware Machine ID)**:
+   - Token bản quyền được mã hóa và khóa cứng theo Hardware ID vật lý của bo mạch chủ / CPU thiết bị.
+   - Tuyệt đối ngăn chặn sao chép phần mềm sang máy khác để sử dụng trái phép; tự động gửi tín hiệu hủy kích hoạt lên máy chủ API khi người dùng nhấn Hủy bản quyền.
 
-6. **Bảng Cài Đặt AI API Tinh Gọn & Tự Động Lưu Tức Thì (Instant Auto-Save)**:
-   - Toàn bộ thiết lập Gemini AI, Agnes AI, Anki Auto-fill và Âm thanh tự động lưu tức thì vào máy ngay khi thay đổi; loại bỏ hoàn toàn các nút bấm "Lưu cấu hình" thủ công.
-   - Chuẩn hóa phân loại đa ngôn ngữ trung tính: Phân tầng độ khó (Sơ cấp / Trung cấp / Cao cấp), độ dài câu và phiên âm (IPA / Pinyin / Furigana) tương thích mượt mà cho cả Tiếng Anh 🇬🇧, Tiếng Trung 🇨🇳 và Tiếng Nhật 🇯🇵.
+6. **Tối Ưu Bố Cục Tab Đồng Bộ Anki & Tự Động Nén Setup.zip**:
+   - Tái cấu trúc khu vực chọn **Bộ Deck** và **Loại thẻ** thành 2 hàng ngang độc lập, rộng rãi, chống tràn vỡ giao diện trên mọi kích thước màn hình.
+   - Hiển thị đầy đủ nhãn nguồn ánh xạ trường mà không bị cắt cụt ba chấm.
+   - Bộ cài đặt được tự động đóng gói thêm bản `.zip` giúp tải về nhanh chóng và không bị trình duyệt cảnh báo.
 
-7. **Trình Tạo Câu Ví Dụ AI Đa Ngữ & Khóa Kích Thước Cửa Sổ Chuẩn**:
-   - Tự động tạo câu ví dụ đa ngữ chất lượng cao kèm giải nghĩa ngữ cảnh theo đúng ngôn ngữ đang tra cứu.
-   - Cố định kích thước cửa sổ chuẩn lúc khởi động và thiết lập rào chắn kích thước tối thiểu, đảm bảo giao diện luôn co giãn đẹp mắt và không bị vỡ bố cục.
+---
 
-8. **Công Nghệ Chụp OCR Màn Hình Tam Ngữ Tối Ưu (Tri-Lingual Screen OCR)**:
-   - Tích hợp nhận diện văn bản offline siêu tốc cho cả 3 ngôn ngữ: **Tiếng Anh 🇬🇧, Tiếng Trung 🇨🇳, Tiếng Nhật 🇯🇵**.
-   - Tự động chuyển đổi engine Windows OCR chuyên sâu (`en-US`, `zh-Hans-CN`, `ja-JP`) theo ngôn ngữ đang tra cứu.
-   - Thuật toán làm sạch văn bản thông minh (giữ nguyên khoảng trắng tiếng Anh, tự động thu gọn khoảng trắng thừa giữa các ký tự CJK Hán tự / Kana).
-   - Tự động nhận diện ngôn ngữ thông minh sau khi chụp: Tự động chuyển tab từ điển Tiếng Nhật khi quét thấy Hiragana/Katakana, tự chuyển tab Tiếng Anh khi quét từ vựng Latin.
-   - **Tự động kích hoạt gói OCR Tiếng Nhật**: Trình cài đặt `Setup.exe` tự động kích hoạt gói OCR Tiếng Nhật của Windows trong quá trình cài đặt; đồng thời bổ sung nút bấm `⚡ Tự động cài đặt (1-Click)` trong phần Cài đặt của ứng dụng, người dùng không cần phải tự mở Cài đặt Windows để thêm thủ công.
+## 🌟 Nhật Ký Các Phiên Bản Trước
 
-9. **Thuật Toán Xếp Hạng Ưu Tiên & Hợp Nhất Nghĩa Từ Đa Nghĩa (Polysemous Word Ranking & Merging)**:
-   - Tự động ưu tiên xếp hạng các từ vựng thông dụng (chữ thường pinyin e.g. `[ jiā ]` - thêm, cộng, gia tăng) lên trước danh từ riêng viết hoa (e.g. `[ Jiā ]` - Canada, họ Gia).
-   - Tự động gộp và hợp nhất toàn bộ các tầng định nghĩa, từ loại và câu ví dụ từ tất cả các bản ghi của từ đa nghĩa, giải quyết dứt điểm tình trạng mất nghĩa thông dụng của các từ nhiều tầng nghĩa (như 加, 美, 法, 中, 英, 德...).
-
-10. **Bộ Nhận Diện Từ Loại Thông Minh (Smart POS Detector)**:
-    - Tự động trích xuất và phân loại từ loại chuyên sâu (Lượng từ, Động từ, Danh từ, Tính từ, Số từ, Đại từ, Phó từ, Họ...) từ nội dung định nghĩa cho toàn bộ các từ vựng chưa có thông tin từ loại trong từ điển.
-    - Nguyên tắc bảo toàn: Chỉ kích hoạt cho các từ khuyết thiếu thông tin từ loại; tuyệt đối giữ nguyên 100% dữ liệu đối với các từ đã có sẵn từ loại.
-    - Hiển thị trực quan dạng các thẻ huy hiệu Badge phân màu rõ ràng (ví dụ: chữ `张` tự động nhận diện và hiển thị đầy đủ các từ loại: `Lượng từ`, `Động từ`, `Danh từ`, `Họ`).
+### Phiên Bản v2.6.0:
+1. **Hệ Sinh Thái Từ Điển Tam Ngữ Hoàn Chỉnh (Tri-Lingual Engine)**: Tiếng Trung 🇨🇳, Tiếng Anh 🇬🇧, Tiếng Nhật 🇯🇵.
+2. **Gợi Ý Từ Khóa Đa Ngữ Thông Minh (Auto-Suggestions)**: Tra xuôi và tra ngược tiếng Việt đa chiều.
+3. **Đồng Bộ Anki Card Tự Động Theo Ngôn Ngữ**: Tự động nhận diện ngôn ngữ và giọng đọc Neural TTS tương ứng.
+4. **Studio Lồng Tiếng Video AI & Gemini 1-Click BYOK**.
+5. **Bộ Cài Đặt Windows Setup Hiện Đại**.
+6. **Bảng Cài Đặt AI API Tinh Gọn & Tự Động Lưu Tức Thì (Instant Auto-Save)**.
+7. **Trình Tạo Câu Ví Dụ AI Đa Ngữ & Khóa Kích Thước Cửa Sổ Chuẩn**.
+8. **Công Nghệ Chụp OCR Màn Hình Tam Ngữ Tối Ưu (Tri-Lingual Screen OCR)**.
+9. **Thuật Toán Xếp Hạng Ưu Tiên & Hợp Nhất Nghĩa Từ Đa Nghĩa (Polysemous Word Ranking & Merging)**.
+10. **Bộ Nhận Diện Từ Loại Thông Minh (Smart POS Detector)**.
 
 ---
 
@@ -71,7 +71,7 @@
 
 ## 📖 Hướng Dẫn Cài Đặt
 
-1. Tải về tệp tin [**HyDict-v2.6.0-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.0/HyDict-v2.6.0-Setup.exe).
+1. Tải về tệp tin [**HyDict-v2.6.7-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.zip) hoặc [**HyDict-v2.6.7-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.exe).
 2. Nhấp đúp vào tệp tin để mở trình cài đặt.
 3. Giữ nguyên dấu tích chọn **`☑ Tạo shortcut ra màn hình desktop`** nếu bạn muốn có biểu tượng HyDict trên màn hình Desktop.
 4. Nhấn **Cài đặt**. Quá trình cài đặt hoàn tất trong vài giây và ứng dụng sẽ tự động khởi động.
