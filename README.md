@@ -47,7 +47,7 @@
    - Tự động chuyển đổi engine Windows OCR chuyên sâu (`en-US`, `zh-Hans-CN`, `ja-JP`) theo ngôn ngữ đang tra cứu.
    - Thuật toán làm sạch văn bản thông minh (giữ nguyên khoảng trắng tiếng Anh, tự động thu gọn khoảng trắng thừa giữa các ký tự CJK Hán tự / Kana).
    - Tự động nhận diện ngôn ngữ thông minh sau khi chụp: Tự động chuyển tab từ điển Tiếng Nhật khi quét thấy Hiragana/Katakana, tự chuyển tab Tiếng Anh khi quét từ vựng Latin.
-   - Bổ sung bảng trạng thái gói OCR và nút 1-Click mở Cài đặt Windows để thêm gói Tiếng Nhật cực kỳ tiện lợi.
+   - **Tự động kích hoạt gói OCR Tiếng Nhật**: Trình cài đặt `Setup.exe` tự động kích hoạt gói OCR Tiếng Nhật của Windows trong quá trình cài đặt; đồng thời bổ sung nút bấm `⚡ Tự động cài đặt (1-Click)` trong phần Cài đặt của ứng dụng, người dùng không cần phải tự mở Cài đặt Windows để thêm thủ công.
 
 9. **Thuật Toán Xếp Hạng Ưu Tiên & Hợp Nhất Nghĩa Từ Đa Nghĩa (Polysemous Word Ranking & Merging)**:
    - Tự động ưu tiên xếp hạng các từ vựng thông dụng (chữ thường pinyin e.g. `[ jiā ]` - thêm, cộng, gia tăng) lên trước danh từ riêng viết hoa (e.g. `[ Jiā ]` - Canada, họ Gia).
