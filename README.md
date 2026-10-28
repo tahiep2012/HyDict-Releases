@@ -53,6 +53,11 @@
    - Tự động ưu tiên xếp hạng các từ vựng thông dụng (chữ thường pinyin e.g. `[ jiā ]` - thêm, cộng, gia tăng) lên trước danh từ riêng viết hoa (e.g. `[ Jiā ]` - Canada, họ Gia).
    - Tự động gộp và hợp nhất toàn bộ các tầng định nghĩa, từ loại và câu ví dụ từ tất cả các bản ghi của từ đa nghĩa, giải quyết dứt điểm tình trạng mất nghĩa thông dụng của các từ nhiều tầng nghĩa (như 加, 美, 法, 中, 英, 德...).
 
+10. **Bộ Nhận Diện Từ Loại Thông Minh (Smart POS Detector)**:
+    - Tự động trích xuất và phân loại từ loại chuyên sâu (Lượng từ, Động từ, Danh từ, Tính từ, Số từ, Đại từ, Phó từ, Họ...) từ nội dung định nghĩa cho toàn bộ các từ vựng chưa có thông tin từ loại trong từ điển.
+    - Nguyên tắc bảo toàn: Chỉ kích hoạt cho các từ khuyết thiếu thông tin từ loại; tuyệt đối giữ nguyên 100% dữ liệu đối với các từ đã có sẵn từ loại.
+    - Hiển thị trực quan dạng các thẻ huy hiệu Badge phân màu rõ ràng (ví dụ: chữ `张` tự động nhận diện và hiển thị đầy đủ các từ loại: `Lượng từ`, `Động từ`, `Danh từ`, `Họ`).
+
 ---
 
 ## 💻 Yêu Cầu Hệ Thống
