@@ -1,41 +1,58 @@
 # HyDict Desktop Releases 🚀
 
-> **HyDict Desktop** — Ứng dụng từ điển thông minh đa ngôn ngữ (Tiếng Trung 🇨🇳, Tiếng Anh 🇬🇧, Tiếng Nhật 🇯🇵) chuyên sâu cho việc tra cứu tức thì, học tập thẻ ghi nhớ Anki, chụp OCR màn hình và lồng tiếng phụ đề video bằng AI trên hệ điều hành Windows.
+> **HyDict Desktop** — Ứng dụng từ điển thông minh đa ngôn ngữ (Tiếng Trung 🇨🇳, Tiếng Anh 🇬🇧, Tiếng Nhật 🇯🇵) chuyên sâu cho việc tra cứu tức thì, học tập thẻ ghi nhớ Anki, chụp OCR màn hình, lồng tiếng phụ đề video bằng AI và quản lý tài liệu học tập toàn diện trên hệ điều hành Windows.
 
 ---
 
-## 📥 Tải Về Phiên Bản Mới Nhất: v2.6.10
+## 📥 Tải Về Phiên Bản Mới Nhất: v2.7.0
 
 | Gói Tải Về | Tệp Tin | Kích Thước | Mô Tả & Tính Năng |
 | :--- | :--- | :--- | :--- |
-| **Bản Cài Đặt ZIP (Khuyên Dùng)** | [**HyDict-v2.6.10-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.zip)<br>*(hoặc [HyDict-v2.6.10-Setup.exe](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.exe))* | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng đóng gói trong file nén .zip an toàn.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động kích hoạt gói OCR Tiếng Nhật Windows.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
-| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.6.10-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-windows-x64.zip) | `~53.6 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
+| **Bản Cài Đặt ZIP (Khuyên Dùng)** | [**HyDict-v2.7.0-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.7.0/HyDict-v2.7.0-Setup.zip)<br>*(hoặc [HyDict-v2.7.0-Setup.exe](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.7.0/HyDict-v2.7.0-Setup.exe))* | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng đóng gói trong file nén .zip an toàn.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động kích hoạt gói OCR Tiếng Nhật Windows.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
+| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.7.0-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.7.0/HyDict-v2.7.0-windows-x64.zip) | `~53.6 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
 
 ---
 
-## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.6.10
+## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.7.0
 
-1. **Tự Động Lồng Tiếng Phụ Đề Video Ngầm (Auto-Dubbing Watchdog)**:
-   - Hệ thống tự động phát hiện các câu phụ đề đã được dịch sang tiếng Việt (`textDubbed`) để tự động bốc vào hàng đợi tổng hợp giọng đọc AI ngay lập tức mà người dùng không cần phải bấm Play trước.
-2. **Nâng Cấp Bể Xử Lý 8 Luồng Song Song Siêu Tốc (8-Worker Pool)**:
-   - Tăng gấp đôi tốc độ tạo giọng đọc Microsoft Edge Neural AI lên 8 luồng đồng thời (`Promise.all` 8 câu một lúc).
-   - Rút ngắn khoảng nghỉ giữa các lô xuống 10ms, cho phép hoàn tất lồng tiếng video ~300 câu chỉ trong 7–9 giây.
-3. **Huy Hiệu Trạng Thái Lồng Tiếng Thời Gian Thực**:
-   - Hiển thị nhãn xanh lá `✓ Đã lồng tiếng` khi file âm thanh đã sẵn sàng trong bộ nhớ RAM; hiển thị nhãn cam xoay `⏳ Đang lồng tiếng` khi câu thoại đang trong hàng đợi tạo âm thanh.
-4. **Trình Tải Phụ Đề .SRT Đa Định Dạng (Native Save Dialog)**:
-   - Bổ sung menu thả xuống tải phụ đề 2 tùy chọn: **Phụ đề gốc** (nguyên bản ngôn ngữ video) và **Phụ đề Tiếng Việt** (đã đồng bộ dịch thuật), hỗ trợ lưu tệp trực tiếp qua hộp thoại Windows Explorer native.
+1. **Trung Tâm Tài Liệu Học Tập Toàn Diện (Learning Materials Hub)**:
+   - Thêm tab điều hướng mới **Tài Liệu** trên thanh bên chính của ứng dụng.
+   - Quản trị toàn bộ kho học liệu bài giảng theo cấu trúc cây thư mục và khóa học phân cấp đa tầng (Hierarchical Folder Tree).
+   - Hỗ trợ lưu trữ, tải lên và xem trước tất cả các định dạng học tập: Video bài giảng, tài liệu PDF, tệp âm thanh nghe hiểu MP3, hình ảnh và ghi chú văn bản.
+   - Tích hợp trình phát media chuyên dụng (Study Video Player) hỗ trợ phát video mượt mà kèm phụ đề song ngữ.
+
+2. **Hệ Thống Chế Độ Xem Chuẩn Phong Cách Windows Explorer (Windows View Modes)**:
+   - Bổ sung menu lựa chọn phong cách hiển thị trực quan: **Biểu tượng lớn (Large Icons)**, **Chi tiết (Details)** kèm bảng kích thước/ngày sửa đổi, **Danh sách (List)**, và **Dạng ô (Tiles)**.
+   - **Ghi nhớ cấu hình vĩnh viễn (UI Persistence)**: Toàn bộ tùy chọn của người dùng (`viewMode`, thứ tự sắp xếp `sortKey`, trạng thái đóng/mở thanh thông tin `isInspectorOpen`, thư mục đang chọn) được lưu tự động vào `localStorage`, đảm bảo không bao giờ bị reset về mặc định khi khởi động lại máy hoặc mở lại phần mềm.
+
+3. **Menu Thao Tác Chuột Phải Thư Mục (Context Menu)**:
+   - Hỗ trợ nhấp chuột phải trực tiếp vào các mục trong danh sách khóa học / thư mục để:
+     - `+ Tạo thư mục con`: Nhanh chóng thêm phân nhánh mới.
+     - `✏️ Đổi tên thư mục`: Hộp thoại chỉnh sửa tên trực quan.
+     - `🗑️ Xóa thư mục`: Hiển thị hộp thoại cảnh báo xác nhận an toàn trước khi xóa nhằm bảo vệ dữ liệu học tập.
+
+4. **Tích Hợp Sâu Hệ Thống Tệp Windows Native**:
+   - Nút **"Thay đổi"** nơi lưu trữ kích hoạt trực tiếp hộp thoại chọn thư mục gốc Windows Explorer native (`select_storage_folder`).
+   - Nút mở nhanh thư mục lưu trữ trực tiếp trong ứng dụng Windows Explorer (`open_in_explorer`).
+   - Tinh gọn thanh điều hướng bên trái: Loại bỏ khu vực thẻ phân loại rườm rà, tập trung hiển thị tag trong bảng chi tiết và xem trước bài giảng.
 
 ---
 
 ## 🌟 Nhật Ký Các Phiên Bản Trước
 
+### Phiên Bản v2.6.10:
+1. **Tự Động Lồng Tiếng Phụ Đề Video Ngầm (Auto-Dubbing Watchdog)**: Tự động tổng hợp âm thanh ngay khi câu phụ đề được dịch.
+2. **Nâng Cấp Bể Xử Lý 8 Luồng Song Song Siêu Tốc (8-Worker Pool)**: Tăng tốc tạo giọng đọc Edge Neural AI lên gấp đôi (~7-9 giây hoàn tất video).
+3. **Huy Hiệu Trạng Thái Lồng Tiếng Thời Gian Thực**: Nhãn xanh `✓ Đã lồng tiếng` và nhãn cam `⏳ Đang lồng tiếng`.
+4. **Trình Tải Phụ Đề .SRT Đa Định Dạng**: Tùy chọn tải phụ đề gốc hoặc phụ đề tiếng Việt qua Windows Explorer dialog.
+
 ### Phiên Bản v2.6.9:
-1. **Lọc Câu Ví Dụ Tự Động Theo Chữ Giản Thể & Phồn Thể**: Toàn bộ câu ví dụ có sẵn trong từ điển nếu có chứa ký tự chữ Hán đối lập sẽ tự động bị ẩn đi 100%, chỉ hiển thị câu thuần thể chữ người dùng đang chọn.
-2. **Empty State Thông Minh Cho Câu Ví Dụ**: Hướng dẫn bấm nút tạo câu ví dụ AI đúng chuẩn thể chữ đang chọn.
+1. **Lọc Câu Ví Dụ Tự Động Theo Chữ Giản Thể & Phồn Thể**: Ẩn câu có chữ đối lập, chỉ hiển thị câu thuần thể chữ người dùng chọn.
+2. **Empty State Thông Minh Cho Câu Ví Dụ**: Gợi ý tạo câu ví dụ AI đúng chuẩn thể chữ.
 
 ### Phiên Bản v2.6.8:
-1. **Tùy Chọn Chữ Giản / Phồn Thể Trong Cài Đặt**: Hỗ trợ chuyển đổi hiển thị chữ Hán linh hoạt.
-2. **Sửa Lỗi Nhận Diện Trùng Lặp Thẻ Anki**: Kiểm tra trùng thẻ chính xác và tiết kiệm token AI.
+1. **Tùy Chọn Chữ Giản / Phồn Thể Trong Cài Đặt**: Chuyển đổi hiển thị linh hoạt.
+2. **Sửa Lỗi Nhận Diện Trùng Lặp Thẻ Anki**: Tiết kiệm token AI.
 
 ### Phiên Bản v2.6.7:
 1. **Tự Động Cài Đặt AnkiConnect 100% Offline (Zero-Configuration)**.
@@ -64,7 +81,7 @@
 
 ## 📖 Hướng Dẫn Cài Đặt
 
-1. Tải về tệp tin [**HyDict-v2.6.10-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.zip) hoặc [**HyDict-v2.6.10-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.exe).
+1. Tải về tệp tin [**HyDict-v2.7.0-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.7.0/HyDict-v2.7.0-Setup.zip) hoặc [**HyDict-v2.7.0-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.7.0/HyDict-v2.7.0-Setup.exe).
 2. Nhấp đúp vào tệp tin để mở trình cài đặt.
 3. Giữ nguyên dấu tích chọn **`☑ Tạo shortcut ra màn hình desktop`** nếu bạn muốn có biểu tượng HyDict trên màn hình Desktop.
 4. Nhấn **Cài đặt**. Quá trình cài đặt hoàn tất trong vài giây và ứng dụng sẽ tự động khởi động.
