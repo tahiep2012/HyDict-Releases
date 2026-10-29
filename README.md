@@ -4,59 +4,44 @@
 
 ---
 
-## 📥 Tải Về Phiên Bản Mới Nhất: v2.6.7
+## 📥 Tải Về Phiên Bản Mới Nhất: v2.6.10
 
 | Gói Tải Về | Tệp Tin | Kích Thước | Mô Tả & Tính Năng |
 | :--- | :--- | :--- | :--- |
-| **Bản Cài Đặt ZIP (Khuyên Dùng)** | [**HyDict-v2.6.7-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.zip)<br>*(hoặc [HyDict-v2.6.7-Setup.exe](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.exe))* | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng đóng gói trong file nén .zip an toàn.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động kích hoạt gói OCR Tiếng Nhật Windows.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
-| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.6.7-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-windows-x64.zip) | `~56.2 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
+| **Bản Cài Đặt ZIP (Khuyên Dùng)** | [**HyDict-v2.6.10-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.zip)<br>*(hoặc [HyDict-v2.6.10-Setup.exe](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.exe))* | `~53.5 MB` | • Trình cài đặt tự động đầy đủ tính năng đóng gói trong file nén .zip an toàn.<br>• **Có nút check tạo Shortcut ra màn hình Desktop (bật sẵn)**.<br>• Tự động kích hoạt gói OCR Tiếng Nhật Windows.<br>• Tự động tạo lối tắt trong Start Menu & tích hợp uninstaller.<br>• Đóng gói sẵn toàn bộ cơ sở dữ liệu từ điển offline. |
+| **Bản Portable (Chạy Ngay)** | [**HyDict-v2.6.10-windows-x64.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-windows-x64.zip) | `~53.6 MB` | • Dành cho người dùng muốn giải nén là chạy ngay không cần cài đặt.<br>• Phù hợp lưu trữ trong USB hoặc môi trường di động. |
 
 ---
 
-## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.6.7
+## ✨ Điểm Mới Nổi Bật Trong Phiên Bản v2.6.10
 
-1. **Tự Động Cài Đặt AnkiConnect 100% Offline (Zero-Configuration)**:
-   - Gói add-on AnkiConnect (`2055492159`) dung lượng ~91 KB được nhúng trực tiếp vào file thực thi của HyDict.
-   - Khi bấm **"Thêm vào Anki"**, nếu phát hiện máy tính chưa có AnkiConnect, HyDict tự động giải nén và nạp toàn bộ mã nguồn add-on vào thư mục Anki của máy chỉ trong 10ms mà **không cần kết nối Internet**.
-   - Cấu hình sẵn CORS (`http://localhost`, `http://tauri.localhost`, `*`) ngăn chặn triệt để mọi lỗi chặn kết nối giữa Webview và Anki.
-   - Bổ sung nút bấm **`[Tự động cài AnkiConnect (1-Click)]`** nổi bật trong phần Cài đặt Hệ thống để người dùng có thể kích hoạt chủ động bất kỳ lúc nào.
-
-2. **Tự Động Khởi Chạy Anki Desktop Khi Thêm Thẻ**:
-   - Khi bấm nút **"Thêm vào Anki"** mà phần mềm Anki Desktop đang đóng, HyDict tự động quét và kích hoạt `Anki.exe` chạy nền độc lập.
-   - Hệ thống tự động chờ AnkiConnect sẵn sàng và tiếp tục đẩy thẻ mới vào Anki mượt mà, không gây ngắt quãng trải nghiệm người dùng.
-
-3. **Kiểm Tra Trùng Lặp Thẻ Trước Khi Gọi AI / Sinh Âm Thanh (Pre-check Duplicates)**:
-   - Cơ chế kiểm tra siêu tốc (~30ms) qua AnkiConnect được kích hoạt ngay bước đầu tiên để xác định từ vựng đã tồn tại trong bộ bài hay chưa.
-   - Nếu từ đã có trong Anki: Lập tức dừng quy trình, **tiết kiệm 100% token AI (sinh câu/ảnh)** và **không tốn thời gian tạo audio TTS**, đồng thời chuyển nút sang trạng thái thân thiện: `✓ Đã có trong Anki`.
-
-4. **Tự Động Sinh Ảnh Minh Họa AI Đa Ngôn Ngữ (Trung - Anh - Nhật)**:
-   - Hỗ trợ tạo ảnh trực quan theo phong cách đã thiết lập (Anime, Realistic, Cyberpunk, 3D Render...) cho từ vựng của cả 3 ngôn ngữ khi thêm vào Anki.
-   - Tự động nhận diện trạng thái API Key: Tự vô hiệu hóa tính năng tạo ảnh khi chưa nhập Agnes API Key và tự kích hoạt lại ngay khi người dùng nạp Key.
-
-5. **Khóa Chết Cơ Chế Bảo Vệ Bản Quyền Phần Mềm (Hardware Machine ID)**:
-   - Token bản quyền được mã hóa và khóa cứng theo Hardware ID vật lý của bo mạch chủ / CPU thiết bị.
-   - Tuyệt đối ngăn chặn sao chép phần mềm sang máy khác để sử dụng trái phép; tự động gửi tín hiệu hủy kích hoạt lên máy chủ API khi người dùng nhấn Hủy bản quyền.
-
-6. **Tối Ưu Bố Cục Tab Đồng Bộ Anki & Tự Động Nén Setup.zip**:
-   - Tái cấu trúc khu vực chọn **Bộ Deck** và **Loại thẻ** thành 2 hàng ngang độc lập, rộng rãi, chống tràn vỡ giao diện trên mọi kích thước màn hình.
-   - Hiển thị đầy đủ nhãn nguồn ánh xạ trường mà không bị cắt cụt ba chấm.
-   - Bộ cài đặt được tự động đóng gói thêm bản `.zip` giúp tải về nhanh chóng và không bị trình duyệt cảnh báo.
+1. **Tự Động Lồng Tiếng Phụ Đề Video Ngầm (Auto-Dubbing Watchdog)**:
+   - Hệ thống tự động phát hiện các câu phụ đề đã được dịch sang tiếng Việt (`textDubbed`) để tự động bốc vào hàng đợi tổng hợp giọng đọc AI ngay lập tức mà người dùng không cần phải bấm Play trước.
+2. **Nâng Cấp Bể Xử Lý 8 Luồng Song Song Siêu Tốc (8-Worker Pool)**:
+   - Tăng gấp đôi tốc độ tạo giọng đọc Microsoft Edge Neural AI lên 8 luồng đồng thời (`Promise.all` 8 câu một lúc).
+   - Rút ngắn khoảng nghỉ giữa các lô xuống 10ms, cho phép hoàn tất lồng tiếng video ~300 câu chỉ trong 7–9 giây.
+3. **Huy Hiệu Trạng Thái Lồng Tiếng Thời Gian Thực**:
+   - Hiển thị nhãn xanh lá `✓ Đã lồng tiếng` khi file âm thanh đã sẵn sàng trong bộ nhớ RAM; hiển thị nhãn cam xoay `⏳ Đang lồng tiếng` khi câu thoại đang trong hàng đợi tạo âm thanh.
+4. **Trình Tải Phụ Đề .SRT Đa Định Dạng (Native Save Dialog)**:
+   - Bổ sung menu thả xuống tải phụ đề 2 tùy chọn: **Phụ đề gốc** (nguyên bản ngôn ngữ video) và **Phụ đề Tiếng Việt** (đã đồng bộ dịch thuật), hỗ trợ lưu tệp trực tiếp qua hộp thoại Windows Explorer native.
 
 ---
 
 ## 🌟 Nhật Ký Các Phiên Bản Trước
 
-### Phiên Bản v2.6.0:
-1. **Hệ Sinh Thái Từ Điển Tam Ngữ Hoàn Chỉnh (Tri-Lingual Engine)**: Tiếng Trung 🇨🇳, Tiếng Anh 🇬🇧, Tiếng Nhật 🇯🇵.
-2. **Gợi Ý Từ Khóa Đa Ngữ Thông Minh (Auto-Suggestions)**: Tra xuôi và tra ngược tiếng Việt đa chiều.
-3. **Đồng Bộ Anki Card Tự Động Theo Ngôn Ngữ**: Tự động nhận diện ngôn ngữ và giọng đọc Neural TTS tương ứng.
-4. **Studio Lồng Tiếng Video AI & Gemini 1-Click BYOK**.
-5. **Bộ Cài Đặt Windows Setup Hiện Đại**.
-6. **Bảng Cài Đặt AI API Tinh Gọn & Tự Động Lưu Tức Thì (Instant Auto-Save)**.
-7. **Trình Tạo Câu Ví Dụ AI Đa Ngữ & Khóa Kích Thước Cửa Sổ Chuẩn**.
-8. **Công Nghệ Chụp OCR Màn Hình Tam Ngữ Tối Ưu (Tri-Lingual Screen OCR)**.
-9. **Thuật Toán Xếp Hạng Ưu Tiên & Hợp Nhất Nghĩa Từ Đa Nghĩa (Polysemous Word Ranking & Merging)**.
-10. **Bộ Nhận Diện Từ Loại Thông Minh (Smart POS Detector)**.
+### Phiên Bản v2.6.9:
+1. **Lọc Câu Ví Dụ Tự Động Theo Chữ Giản Thể & Phồn Thể**: Tự động lọc câu ví dụ tương ứng với kiểu chữ của từ đang tra.
+
+### Phiên Bản v2.6.8:
+1. **Tùy Chọn Chữ Giản / Phồn Thể Trong Cài Đặt**: Hỗ trợ chuyển đổi hiển thị chữ Hán linh hoạt.
+2. **Sửa Lỗi Nhận Diện Trùng Lặp Thẻ Anki**: Kiểm tra trùng thẻ chính xác và tiết kiệm token AI.
+
+### Phiên Bản v2.6.7:
+1. **Tự Động Cài Đặt AnkiConnect 100% Offline (Zero-Configuration)**.
+2. **Tự Động Khởi Chạy Anki Desktop Khi Thêm Thẻ**.
+3. **Kiểm Tra Trùng Lặp Thẻ Trước Khi Gọi AI / Sinh Âm Thanh**.
+4. **Tự Động Sinh Ảnh Minh Họa AI Đa Ngôn Ngữ**.
+5. **Khóa Chết Cơ Chế Bảo Vệ Bản Quyền Phần Mềm (Hardware Machine ID)**.
 
 ---
 
@@ -71,7 +56,7 @@
 
 ## 📖 Hướng Dẫn Cài Đặt
 
-1. Tải về tệp tin [**HyDict-v2.6.7-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.zip) hoặc [**HyDict-v2.6.7-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.7/HyDict-v2.6.7-Setup.exe).
+1. Tải về tệp tin [**HyDict-v2.6.10-Setup.zip**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.zip) hoặc [**HyDict-v2.6.10-Setup.exe**](https://github.com/tahiep2012/HyDict-Releases/releases/download/v2.6.10/HyDict-v2.6.10-Setup.exe).
 2. Nhấp đúp vào tệp tin để mở trình cài đặt.
 3. Giữ nguyên dấu tích chọn **`☑ Tạo shortcut ra màn hình desktop`** nếu bạn muốn có biểu tượng HyDict trên màn hình Desktop.
 4. Nhấn **Cài đặt**. Quá trình cài đặt hoàn tất trong vài giây và ứng dụng sẽ tự động khởi động.
