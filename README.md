@@ -30,7 +30,8 @@
 ## 🌟 Nhật Ký Các Phiên Bản Trước
 
 ### Phiên Bản v2.6.9:
-1. **Lọc Câu Ví Dụ Tự Động Theo Chữ Giản Thể & Phồn Thể**: Tự động lọc câu ví dụ tương ứng với kiểu chữ của từ đang tra.
+1. **Lọc Câu Ví Dụ Tự Động Theo Chữ Giản Thể & Phồn Thể**: Toàn bộ câu ví dụ có sẵn trong từ điển nếu có chứa ký tự chữ Hán đối lập sẽ tự động bị ẩn đi 100%, chỉ hiển thị câu thuần thể chữ người dùng đang chọn.
+2. **Empty State Thông Minh Cho Câu Ví Dụ**: Hướng dẫn bấm nút tạo câu ví dụ AI đúng chuẩn thể chữ đang chọn.
 
 ### Phiên Bản v2.6.8:
 1. **Tùy Chọn Chữ Giản / Phồn Thể Trong Cài Đặt**: Hỗ trợ chuyển đổi hiển thị chữ Hán linh hoạt.
@@ -42,6 +43,13 @@
 3. **Kiểm Tra Trùng Lặp Thẻ Trước Khi Gọi AI / Sinh Âm Thanh**.
 4. **Tự Động Sinh Ảnh Minh Họa AI Đa Ngôn Ngữ**.
 5. **Khóa Chết Cơ Chế Bảo Vệ Bản Quyền Phần Mềm (Hardware Machine ID)**.
+
+### Phiên Bản v2.6.0:
+1. **Hệ Sinh Thái Từ Điển Tam Ngữ Hoàn Chỉnh (Tri-Lingual Engine)**: Tiếng Trung 🇨🇳, Tiếng Anh 🇬🇧, Tiếng Nhật 🇯🇵.
+2. **Gợi Ý Từ Khóa Đa Ngữ Thông Minh (Auto-Suggestions)**.
+3. **Đồng Bộ Anki Card Tự Động Theo Từng Ngôn Ngữ**.
+4. **Studio Lồng Tiếng Video AI & Gemini 1-Click BYOK**.
+5. **Công Nghệ Chụp OCR Màn Hình Tam Ngữ Tối Ưu**.
 
 ---
 
