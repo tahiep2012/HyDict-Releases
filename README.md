@@ -36,6 +36,15 @@
    - Nút mở nhanh thư mục lưu trữ trực tiếp trong ứng dụng Windows Explorer (`open_in_explorer`).
    - Tinh gọn thanh điều hướng bên trái: Loại bỏ khu vực thẻ phân loại rườm rà, tập trung hiển thị tag trong bảng chi tiết và xem trước bài giảng.
 
+5. **Menu Điều Hướng Tương Thích Phong Cách Google Chrome (Chrome Responsive Drawer Menu)**:
+   - Khi thu nhỏ cửa sổ ứng dụng (Restore Down / thu hẹp chiều rộng), thanh menu dọc cố định tự động thu gọn tinh tế, chuyển sang thanh tiêu đề nhỏ gọn kèm nút Hamburger (`☰`).
+   - Nhấp vào nút Hamburger mở thanh Drawer trượt mượt mà kèm lớp phủ mờ tối (darkened backdrop), tự động đóng lại khi chọn tab, bấm ra ngoài hoặc nhấn phím `Escape`.
+   - Trả lại toàn bộ không gian ngang cho giao diện học liệu khi ở màn hình nhỏ.
+
+6. **Bố Cục Cột Lưới Bất Biến (Invariant CSS Grid Layout)**:
+   - Tái thiết kế bảng danh sách tài liệu (`MaterialDetailsTable`) theo cấu trúc CSS Grid chia cột cố định chuẩn xác (`minmax(220px, 1fr) 120px 115px 105px 110px`).
+   - Đảm bảo 100% không bao giờ bị gãy thành 2 dòng ở các cột `NGÀY THÊM`, `LOẠI TỆP`, `KÍCH THƯỚC`, `THAO TÁC`, các huy hiệu định dạng (`Video MP4`, `Sách PDF`, `Âm thanh`, `Excel / Word`) và nút hành động khi co giãn kích thước cửa sổ.
+
 ---
 
 ## 🌟 Nhật Ký Các Phiên Bản Trước
