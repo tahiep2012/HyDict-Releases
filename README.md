@@ -45,6 +45,15 @@
    - Tái thiết kế bảng danh sách tài liệu (`MaterialDetailsTable`) theo cấu trúc CSS Grid chia cột cố định chuẩn xác (`minmax(220px, 1fr) 120px 115px 105px 110px`).
    - Đảm bảo 100% không bao giờ bị gãy thành 2 dòng ở các cột `NGÀY THÊM`, `LOẠI TỆP`, `KÍCH THƯỚC`, `THAO TÁC`, các huy hiệu định dạng (`Video MP4`, `Sách PDF`, `Âm thanh`, `Excel / Word`) và nút hành động khi co giãn kích thước cửa sổ.
 
+7. **Tích Hợp Hệ Thống Tệp Windows Native Thực Tế (100% Real Native Filesystem)**:
+   - Tích hợp hộp thoại chọn tệp native Windows (`rfd::FileDialog`) cho phép chọn trực tiếp các tệp từ máy tính (`.mp4`, `.pdf`, `.docx`, `.xlsx`, `.mp3`...).
+   - Tự động sao chép an toàn và đồng bộ tệp vật lý vào thư mục tài liệu lưu trữ (`storagePath/[Thư mục con]`) kèm cơ chế chống trùng lặp tên tệp (`filename (1).ext`).
+   - Tự động tạo thư mục vật lý thật trên ổ đĩa (`fs::create_dir_all`) khi người dùng tạo khóa học hoặc danh mục tài liệu mới.
+   - Hỗ trợ mở tệp trực tiếp bằng phần mềm mặc định của Windows (`cmd /c start`) và mở chính xác vị trí tệp đang chọn trong File Explorer (`explorer.exe /select`).
+
+8. **Tự Động Bóc Tách Thông Tin Video Trực Tuyến (YouTube Metadata Analyzer)**:
+   - Tự động trích xuất tiêu đề video thật, thời lượng phát chính xác và hình ảnh thumbnail chất lượng cao ngay khi dán link YouTube mà không cần bất kỳ API key nào.
+
 ---
 
 ## 🌟 Nhật Ký Các Phiên Bản Trước
